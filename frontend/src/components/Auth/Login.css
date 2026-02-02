@@ -1,0 +1,132 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #0d0d0d; /* solid black background */
+  padding: 24px;
+}
+
+.login-box {
+  background: #121212; /* dark card */
+  border: 1px solid #262626; /* subtle border */
+  border-radius: 12px;
+  padding: 32px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.login-header h1 {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+  color: #fafafa; /* white text */
+  font-weight: 600;
+}
+
+.login-header p {
+  margin: 0;
+  color: #a1a1aa; /* muted gray */
+  font-size: 14px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #e5e5e5;
+  font-size: 13px;
+}
+
+.form-group input {
+  padding: 12px 14px;
+  border: 1px solid #262626;
+  background: #0f0f0f;
+  color: #fafafa;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.form-group input::placeholder {
+  color: #9ca3af;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #e5e5e5; /* simple focus */
+}
+
+.form-group input:disabled {
+  background: #0f0f0f;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #f87171; /* red text on dark */
+  padding: 8px 0;
+  font-size: 13px;
+}
+
+.submit-btn {
+  padding: 12px;
+  background: #ffffff; /* solid white button */
+  color: #0d0d0d;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background: #e5e5e5;
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.toggle-auth {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.toggle-auth p {
+  color: #a1a1aa;
+  font-size: 13px;
+}
+
+.toggle-auth button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 6px;
+  text-decoration: underline;
+}
+
+.toggle-auth button:hover:not(:disabled) {
+  color: #e5e5e5;
+}
+
+.toggle-auth button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
